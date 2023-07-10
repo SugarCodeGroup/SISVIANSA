@@ -105,7 +105,13 @@ $ObjetoCliente = new Cliente($passwd);
 $ObjetoWeb = new Web($ci,$nombre,$apellido,$email,$celular,$direccion,$passwd);
 $ObjetoEmpresa new Empresa($rut, $namemp, $rubro, $telefono, $representante, $passwd);
 
-//Registro Objeto
-$texto = 
+//Registro Objeto Web
+$textoweb = " CI: ".$ObjetoWeb->getCi()."\r\n Nombre: ".$ObjetoWeb->getNombre."\r\n Apellido".$ObjetoWeb->getApellido."\r\n Email: ".$ObjetoWeb->getEmail."\r\n Celular: ".$ObjetoWeb->getCelular."\r\n Direccion: ".$ObjetoWeb->getDireccion."\r\n Contraseña".$ObjetoWeb->getPasswd."\r\n";
+$fileweb = "clienteweb.txt";
+$fp = fopen($fileweb, "a+");
+fwrite ($fp, $textoweb);
+
+
+
 
 ?>
