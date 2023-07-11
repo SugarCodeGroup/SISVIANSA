@@ -1,0 +1,57 @@
+
+h1{
+    background-color: rgba(255,255,255,50%);
+    margin: 0%;
+    position: fixed;
+    
+}
+img.IconoMenu{
+    size: 100%;
+    padding: inherit;
+    margin-right: 0%;
+}
+header{
+}
+
+
+body{
+    background: linear-gradient(180deg, rgba(255,204,204,1) 50%, rgba(255,255,255,1) 100%);
+    background-attachment: fixed;
+    margin: 0%;
+}
+
+footer{
+    border: px solid #B9B9B9;
+    background: linear-gradient(180deg, #D1D1D1 0%, #010101 88.04%);
+    position:absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    
+    color: #eee;
+    padding-top: 20px;
+    font-size: 8px;
+}
+
+div.TelFooter{
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+div.HorarioFooter{
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+div.MailFooter{
+    margin-bottom: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+div.SugarCodeFooter{
+    text-align: center;
+    color: gray;
+    font-size: 10px;
+}
