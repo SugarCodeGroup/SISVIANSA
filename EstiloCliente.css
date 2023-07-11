@@ -1,3 +1,10 @@
+/* 
+        Este CSS es inicial, no acepta formatos distintos a 360 x 484.
+
+*/
+
+
+
 /*      COMUN A TODOS */
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -124,7 +131,12 @@ section.Personalizado{
 }
 
 
+/*      FORMS        */
 
+form{
+    text-align: center;
+    padding: 100px;
+}
 
 
 
@@ -141,6 +153,7 @@ footer{
     color: #eee;
     padding-top: 20px;
     font-size: 8px;
+    margin-top: -20%;
 }
 
 div.TelFooter{
