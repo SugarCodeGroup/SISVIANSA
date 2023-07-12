@@ -37,6 +37,7 @@ footer{
     border: px solid #B9B9B9;
     background: linear-gradient(180deg, #D1D1D1 0%, #010101 88.04%);
     width: 100%;
+
 }
 
 
@@ -60,3 +61,50 @@ footer{
 
 
 /*          SECCION DE MENÚS         */
+
+
+
+
+
+/*          FORMS           */
+
+form{
+    background-color: #D1D1D1;
+    width: max-content;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+input[type=text], select{
+    width: 100%;
+}
+
+input[type=password], select{
+    width: 100%;
+}
+
+/*          BUTTONS         */
+
+.EntrarButton{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.LoginEmpresaButton{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
