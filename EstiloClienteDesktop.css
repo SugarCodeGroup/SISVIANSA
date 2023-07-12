@@ -1,0 +1,62 @@
+
+/*      COMUNES A TODOS Y BASES       */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    text-align: center;
+    background-color: #FCC;
+}
+body{
+    min-height: 100%;
+}
+
+/*          ENCABEZADOS Y PIE DE PAGINAS        */
+
+h1{
+    min-width: 360px;
+    border: 1px solid #D3D3D3;
+    background: rgba(255, 255, 255, 0.60);
+    width: 100%;
+    height: max-content;
+    position: fixed;
+}
+
+.IconoMenu{
+    size:inherit;
+    padding: 10px;
+}
+
+
+footer{
+    min-width: 360px;
+    border: px solid #B9B9B9;
+    background: linear-gradient(180deg, #D1D1D1 0%, #010101 88.04%);
+    width: 100%;
+}
+
+
+/*          PRESENTACIONES DE LA EMPRESA QUE VENDE LAS VIANDAS       */
+
+.presentación{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url("recursos/image\ 3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    backdrop-filter: 20px;
+}
+
+.QuienesSomos{
+    background-image: ();
+}
+
+
+
+/*          SECCION DE MENÚS         */
