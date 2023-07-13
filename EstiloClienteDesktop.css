@@ -13,7 +13,16 @@ html{
 }
 body{
     min-height: 100%;
+    position: relative;
+    padding-bottom: 9em;
 }
+
+
+
+
+
+
+
 
 /*          ENCABEZADOS Y PIE DE PAGINAS        */
 
@@ -33,12 +42,21 @@ h1{
 
 
 footer{
-    min-width: 360px;
+    color: white;
+    min-width: 100%;
     border: px solid #B9B9B9;
     background: linear-gradient(180deg, #D1D1D1 0%, #010101 88.04%);
     width: 100%;
-
+    position: absolute;
+    bottom: 0;
 }
+
+
+
+
+
+
+
 
 
 /*          PRESENTACIONES DE LA EMPRESA QUE VENDE LAS VIANDAS       */
@@ -73,8 +91,7 @@ form{
     width: max-content;
     padding: 2px 8px;
     border-radius: 20px;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin: 0 auto;
 }
 
 input[type=text], select{
@@ -84,6 +101,12 @@ input[type=text], select{
 input[type=password], select{
     width: 100%;
 }
+
+
+
+
+
+
 
 /*          BUTTONS         */
 
