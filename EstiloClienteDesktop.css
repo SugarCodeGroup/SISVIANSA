@@ -140,3 +140,19 @@ input[type=password], select{
     cursor: pointer;
     border-radius: 20px;
 }
+
+
+
+/*          SECCIÓN DE UBICACIONES           */
+
+.Ubicaciones{
+    text-align: left;
+    background-color: #ccffe6;
+    padding: 20px;
+    border: solid green;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    column-count: 2;
+    column-gap: normal;
+}
