@@ -3,23 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloClienteDesktop.css">
     <title>Login Empresa</title>
 </head>
+
+
+
+<!--        MENU SUPERIOR        -->
+<h1>
+    <img class="IconoMenu" src="recursos/Iconos/Menu.png">
+    <a href="Ubicaciones.html">
+        <img class="IconoMenu" src="recursos/Iconos/Map Marker.png">
+    </a>
+    <a href="main.html">
+        <img class="IconoLogo" src="recursos/Iconos/image 1.png">
+    </a>
+    <a href="login.html">
+        <img class="IconoMenu" src="recursos/Iconos/Name.png">
+    </a>
+    <img class="IconoMenu" src="recursos/Iconos/Home Page.png">
+</h1>
+
+
+
+
 <body>
-    <label>Login</label>
-    <br>
-    <label>R.U.T.:</label>
-    <input type="text" id="txtRUT" name="txtRUT">
-    <br>
-    <label>Contraseña:</label>
-    <input type="password" id="pwdContraseña" name="pwdContraseña">
     <br>
     <br>
     <br>
-    <input type="button" id="btnEntrar" name="btnEntrar" value="Entrar">
-    <input type="button" id="btnUsuario" name="btnUsuario" value="Acceder como Usuario">
+    <br>
+
+
+    <!--            FORMS            -->
+
+
+    <form method="post" action="LoginEmpresa.php">
+        <label class="Subtitulos">Login Empresas</label>
+        <br>
+        <br>
+        <label>R.U.T.:</label>
+        <input type="text" id="txtRUT" name="txtRUT">
+        <br>
+        <label>Contraseña:</label>
+        <input type="password" id="pwdContraseña" name="pwdContraseña">
+        <br>
+        <br>
+        <br>
+        <input type="submit" class="EntrarButton" id="btnEntrar" name="btnEntrar" value="Entrar">
+        <br>
+        <input type="button" class="OtroLoginButton" id="btnUsuario" name="btnUsuario" value="Acceder como Usuario" onclick="location.href='login.html'" >
+        <br>
+        <br>
+        <a href="RegisterEmpresa.html">¿No estas Registrado?<br> Registrate</a>
+    </form>
     <br>
     <br>
-    <a href="RegisterEmpresa.html">¿No estas Registrado?<br> Registrate</a>
+    
+
+
+    <!--        PIE DE PAGINA        -->
+<footer>
+    <div class="TelFooter">Tel.: 2314 0622</div>
+    <div class="HorarioFooter">L a V 9:00 a 19:00</div>
+    <div class="MailFooter">BLABLABLA@dot.com</div>
+    <div class="SugarCodeFooter">2023 Sugar Code</div>
+</footer>
+
+
+
 </body>
 </html>

@@ -17,6 +17,11 @@ body{
     padding-bottom: 9em;
 }
 
+.Subtitulos{
+    font-size: 24px;
+    font:bolder;
+    font-style: italic;
+}
 
 
 
@@ -96,10 +101,14 @@ form{
 
 input[type=text], select{
     width: 100%;
+    padding: 4px;
+    border-radius: 20px;
 }
 
 input[type=password], select{
     width: 100%;
+    padding: 4px;
+    border-radius: 20px;
 }
 
 
@@ -121,7 +130,7 @@ input[type=password], select{
     border-radius: 20px;
 }
 
-.LoginEmpresaButton{
+.OtroLoginButton{
     background-color: purple;
     border: none;
     color: white;
