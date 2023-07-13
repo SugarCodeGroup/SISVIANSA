@@ -3,52 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloClienteDesktop.css">
     <title>Ubicación</title>
 </head>
+
+
+<!--        MENU SUPERIOR        -->
+<h1>
+    <img class="IconoMenu" src="recursos/Iconos/Menu.png">
+    <a href="Ubicaciones.html">
+        <img class="IconoMenu" src="recursos/Iconos/Map Marker.png">
+    </a>
+    <a href="main.html">
+        <img class="IconoLogo" src="recursos/Iconos/image 1.png">
+    </a>
+    <a href="login.html">
+        <img class="IconoMenu" src="recursos/Iconos/Name.png">
+    </a>
+    <img class="IconoMenu" src="recursos/Iconos/Home Page.png">
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
-    <p>REGISTRO PARA EMPRESAS</p>
-    <br>
-    <label>R.U.T.:</label>
-    <input type="text" id="txtRUT" name="txtRUT">
-    <br>
-    <label>Nombre de la Empresa:</label>
-    <input type="text" id="txtNombreEmpresa" name="txtNombreEmpresa">
-    <br>
-    <label>Rubro:</label>
-    <!-- Podriamos colocar esto como una lista para evitar rubros repetidos o mal escritos
-        Aunque para ello deberiamos conectarlo con una tabla de Rubros. -->
-    <input type="text" id="txtRubro" name="txtRubro">
     <br>
     <br>
-    <label>Se le solicitará los datos de alguien responsable para poder contactar en casos necesarios</label>
     <br>
     <br>
-    <label>DATOS DEL RESPONSABLE</label>
+
+
+    <p class="Subtitulos">REGISTRO PARA EMPRESAS</p>
+    <br>
+
+
+    <label>Ingrese los datos debajo para poder completar el registro exitosamente.</label>
+
     <br>
     <br>
-    <label>Documento de Identidad:</label>
-    <br>
-    <select id="selDocumento" name="selDocumento">
-        <option value="CI">C.I.</option>
-        <option value="Pasaporte">Pasaporte</option>
-    </select>
-    <input type="text" id="txtDocumento" name="txtDocumento">
-    <br>
-    <label>Nombre:</label>
-    <input type="text" id="txtNombre" name="txtNombre">
-    <br>
-    <label>Apellido:</label>
-    <input type="text" id="txtApellido" name="txtApellido">
-    <br>
-    <label>Correo Electronico:</label>
-    <input type="text" id="txtMail" name="txtMail">
-    <br>
-    <p>Una vez envíe sus datos sera redirigido a la pantalla de sus Menús para poder gestionar nuevos menús</p>
-    <br>
-    <input type="button" id="btnEnviar" name="btnEnviar" value="Enviar">
-    <br>
+    
+    <form method="post" action="RegisterEmpresa.php">
+        <label>R.U.T.:</label>
+        <br>
+        <input type="text" id="txtRUT" name="txtRUT" maxlength="12">
+        <br>
+        <label>Nombre de la Empresa:</label>
+        <input type="text" id="txtNombreEmpresa" name="txtNombreEmpresa">
+        <br>
+        <label>Rubro:</label>
+        <br>
+        <!-- Podriamos colocar esto como una lista para evitar rubros repetidos o mal escritos
+            Aunque para ello deberiamos conectarlo con una tabla de Rubros. -->
+        <input type="text" id="txtRubro" name="txtRubro">
+        <br>
+        <br>
+        <p class="mensaje">Se le solicitará los datos de alguien responsable para poder contactar en casos necesarios</p>
+        <br>
+        <br>
+        <label>DATOS DEL RESPONSABLE</label>
+        <br>
+        <br>
+        <label>Documento de Identidad:</label>
+        <select class="selDocumento" id="selDocumento" name="selDocumento">
+            <option value="CI">C.I.</option>
+            <option value="Pasaporte">Pasaporte</option>
+        </select>
+        <input type="text" id="txtDocumento" name="txtDocumento">
+        <br>
+        <label>Nombre:</label>
+        <br>
+        <input type="text" id="txtNombre" name="txtNombre">
+        <br>
+        <label>Apellido:</label>
+        <br>
+        <input type="text" id="txtApellido" name="txtApellido">
+        <br>
+        <label>Correo Electronico:</label>
+        <br>
+        <input type="text" id="txtMail" name="txtMail">
+        <br>
+        <br>
+        <p class="mensaje">Una vez envíe sus datos sera redirigido a la pantalla de sus Menús para poder gestionar nuevos menús</p>
+        <br>
+        <input class="EntrarButton" type="submit" id="btnEnviar" name="btnEnviar" value="Enviar" >
+        <br>
+    </form>
     <br>
     <label>Su registro y solicitud de Menús estan sujetos a aprobación de la empresa</label>
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--        PIE DE PAGINA        -->
+<footer>
+    <div class="TelFooter">Tel.: 2314 0622</div>
+    <div class="HorarioFooter">L a V 9:00 a 19:00</div>
+    <div class="MailFooter">BLABLABLA@dot.com</div>
+    <div class="SugarCodeFooter">2023 Sugar Code</div>
+</footer>
+
+
 </html>

@@ -21,6 +21,7 @@ body{
     font-size: 24px;
     font:bolder;
     font-style: italic;
+    text-decoration: underline;
 }
 
 
@@ -93,7 +94,7 @@ footer{
 
 form{
     background-color: #D1D1D1;
-    width: max-content;
+    width: fit-content;
     padding: 2px 8px;
     border-radius: 20px;
     margin: 0 auto;
@@ -103,6 +104,7 @@ input[type=text], select{
     width: 100%;
     padding: 4px;
     border-radius: 20px;
+    max-width: 50vh;
 }
 
 input[type=password], select{
@@ -110,7 +112,6 @@ input[type=password], select{
     padding: 4px;
     border-radius: 20px;
 }
-
 
 
 
@@ -155,4 +156,22 @@ input[type=password], select{
     width: fit-content;
     column-count: 2;
     column-gap: normal;
+}
+
+
+
+
+
+
+/*          Sección de Register           */
+
+.selDocumento{
+    width: fit-content;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+p.mensaje {
+    margin: auto;
+    max-width: 50vh;
 }
