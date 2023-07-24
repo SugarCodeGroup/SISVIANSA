@@ -103,7 +103,7 @@ section.Vegie{
     padding-top: 40%;
     width: 359px;
     height: 430px;
-    flex-shrink: 0;
+
 }
 section.Vegan{
     background-image: url(recursos/VeganFondo.png);
