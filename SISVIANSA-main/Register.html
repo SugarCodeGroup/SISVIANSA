@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EstiloClienteDesktop.css">
+    <title>Registrarse</title>
+    <script>
+        function validarRegistroUsuario() {
+            // Obtener los valores de los campos de entrada
+            var documento = document.getElementById("txtDocumento").value;
+            var nombre = document.getElementById("txtNombre").value;
+            var apellido = document.getElementById("txtApellido").value;
+            var email = document.getElementById("txtMail").value;
+
+            // Verificar campos vacíos
+            if (documento === "" || nombre === "" || apellido === "" || email === "") {
+                alert("Todos los campos son obligatorios. Por favor, complete todos los campos.");
+                return false; // Detener el envío del formulario
+            }
+
+            return true; // Continuar con el envío del formulario
+        }
+    </script>
+</head>
+
+<!--        MENU SUPERIOR        -->
+<h1>
+    <img class="IconoMenu" src="recursos/Iconos/Menu.png">
+    <a href="Ubicaciones.html">
+        <img class="IconoMenu" src="recursos/Iconos/Map Marker.png">
+    </a>
+    <a href="main.html">
+        <img class="IconoLogo" src="recursos/Iconos/image 1.png">
+    </a>
+    <a href="login.html">
+        <img class="IconoMenu" src="recursos/Iconos/Name.png">
+    </a>
+    <img class="IconoMenu" src="recursos/Iconos/Home Page.png">
+</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <label class="Subtitulos">Registro</label>
+    
+    <br>
+    <br>
+    
+    
+    
+    
+    <label>Ingrese los datos debajo para poder completar el registro exitosamente.</label>
+    <br>
+    <br>
+
+    <form method="post" action="RegisterUser.php" onsubmit="return validarRegistroUsuario();">
+
+        
+        <label>Documento de Identidad</label>
+        <select class="selDocumento" id="selDocumento" name="selDocumento">
+            <option value="CI">CI</option>
+            <option value="Pasaporte">Pasaporte</option>
+        </select>
+        <br>
+        <input type="text" id="txtDocumento" name="txtDocumento">
+        <br>
+        <br>
+        <label>Nombre</label>
+        <br>
+        <input type="text" id="txtNombre" name="txtNombre">
+        <br>
+        <label>Apellido</label>
+        <br>
+        <input type="text" id="txtApellido" name="txtApellido">
+        <br>
+        <label>Correo electronico</label>
+        <br>
+        <input type="text" id="txtMail" name="txtMail">
+        <br>
+        <br>
+        <p class="mensaje">Una vez envíe sus datos sera redirigido a la pantallade sus Menús para poder gestionar nuevos menús</p>
+        <br>
+        <input class="EntrarButton" type="submit" id="btnEnviar" name="btnEnviar" value="Enviar">
+        <br>
+        <a href="RegisterEmpresa.html">¿Deseas registrar tu empres?<br>¡Clic aqui!</a>
+
+    </form>
+    <br>
+
+
+
+
+    <label>Su registro y solicitud de Menús estan sujetos a aprobación de la empresa</label>
+    
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<!--        PIE DE PAGINA        -->
+<footer>
+    <div class="TelFooter">Tel.: 2314 0622</div>
+    <div class="HorarioFooter">L a V 9:00 a 19:00</div>
+    <div class="MailFooter">BLABLABLA@dot.com</div>
+    <div class="SugarCodeFooter">2023 Sugar Code</div>
+</footer>
+
+</html>

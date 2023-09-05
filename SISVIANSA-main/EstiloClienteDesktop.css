@@ -1,0 +1,248 @@
+
+/*      COMUNES A TODOS Y BASES       */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    text-align: center;
+    background-color: #FCC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 9em;
+}
+
+.Subtitulos{
+    font-size: 24px;
+    font:bolder;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/*          ENCABEZADOS Y PIE DE PAGINAS        */
+
+h1{
+    min-width: 360px;
+    border: 1px solid #D3D3D3;
+    background: rgba(255, 255, 255, 0.60);
+    width: 100%;
+    height: max-content;
+    position: fixed;
+}
+
+.IconoMenu{
+    size:inherit;
+    padding: 10px;
+}
+
+
+footer{
+    color: white;
+    min-width: 100%;
+    border: px solid #B9B9B9;
+    background: linear-gradient(180deg, #D1D1D1 0%, #010101 88.04%);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+/*          PRESENTACIONES DE LA EMPRESA QUE VENDE LAS VIANDAS       */
+
+.presentación{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url("recursos/image\ 3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    backdrop-filter: 20px;
+}
+
+.QuienesSomos{
+    background-image: ();
+}
+
+
+
+/*          SECCION DE MENÚS   main      */
+
+.TiposDeMenú{
+    color: white;
+    columns: 5;
+    column-fill: auto;
+    height: 430;
+
+}
+
+.Menús{
+    width: 360px;
+    border: green solid 20px;
+}
+
+
+.Vegie{
+    background-image: url("recursos/VegieBackground.png");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    height: 430px;
+    padding-top: 40px;
+}
+
+.Vegan{
+    background-image: url("recursos/VeganFondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100%;
+    height: 430px;
+    padding-top: 40px;
+}
+
+.Balance{
+    background-image: url("recursos/BalancedFondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100%;
+    height: 430px;
+    padding-top: 40px;
+}
+
+.GlutenFree{
+    background-image: url("recursos/GlutenFreeFondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100%;
+    height: 430px;
+    padding-top: 40px;
+}
+
+.Personalizado{
+    background-image: url("recursos/PersonalFondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100%;
+    height: 430px;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+/*          FORMS           */
+
+form{
+    background-color: #D1D1D1;
+    width: fit-content;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+input[type=text], select{
+    width: 100%;
+    padding: 4px;
+    border-radius: 20px;
+    max-width: 50vh;
+}
+
+input[type=password], select{
+    width: 100%;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*          BUTTONS         */
+
+.EntrarButton{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.OtroLoginButton{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+
+/*          SECCIÓN DE UBICACIONES           */
+
+.Ubicaciones{
+    text-align: left;
+    background-color: #ccffe6;
+    padding: 20px;
+    border: solid green;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    column-count: 2;
+    column-gap: normal;
+}
+
+
+
+
+
+
+/*          Sección de Register           */
+
+.selDocumento{
+    width: fit-content;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+p.mensaje {
+    margin: auto;
+    max-width: 50vh;
+}

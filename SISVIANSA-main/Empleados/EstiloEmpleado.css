@@ -1,0 +1,93 @@
+/*          COMUNES A TODOS Y BASES          */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    text-align: center;
+    background-color: #142559;
+    background: linear-gradient(180deg, #142559 50%,#d9d9d9 200% );
+}
+
+body{
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 9em;
+}
+
+
+
+
+
+/*             CUERPO            */
+
+.Credencial{
+    background-color: #d9d9d9;
+    text-align: right;
+    padding: 20px;
+    margin: auto;
+    max-width: fit-content;
+    height: auto;
+    border-radius: 30px;
+    border: solid black;
+    column-count: 2;
+    column-gap: auto;
+}
+
+.crededatos{
+    justify-content: center;
+    column-count: 1;
+    width: max-content;
+    text-align: left;
+}
+
+
+.Titulo{
+    font-size: 28px;
+    color: #d9d9d9;
+    -webkit-text-stroke: 0.5px black;
+
+}
+
+.Subtitulo{
+    font-size: 20px;
+    color: #d9d9d9;
+    -webkit-text-stroke: 0.5px black;
+}
+
+/*          Secciones de Notificaciónes              */
+
+.SeccionNotificaciones{
+    background-color: #d9d9d9;
+    padding: 5px;
+    margin: auto;
+    max-width: 520px;
+    border-radius: 30px;
+    border: solid black;
+    height: 50vh;
+}
+
+.NotificaciónVerde{
+    background-color: greenyellow;
+    border: solid black;
+    border-radius: 40px;
+    width: 500px;
+    padding: 5px;
+    text-align: left;
+    column-count: 3;
+    column-gap: 0;
+    height: 100px;
+
+}
+.NotificacionIcono{
+    width: auto;
+    height: 50px;
+}
+.NotificacionTitulo{
+    font-size: 20px;
+    font: bolder;
+}
