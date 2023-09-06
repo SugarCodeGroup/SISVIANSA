@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EstiloClienteDesktop.css">
     <title>Registrarse</title>
+    <script>
+        function validarRegistroUsuario() {
+            // Obtener los valores de los campos de entrada
+            var documento = document.getElementById("txtDocumento").value;
+            var nombre = document.getElementById("txtNombre").value;
+            var apellido = document.getElementById("txtApellido").value;
+            var email = document.getElementById("txtMail").value;
+
+            // Verificar campos vacíos
+            if (documento === "" || nombre === "" || apellido === "" || email === "") {
+                alert("Todos los campos son obligatorios. Por favor, complete todos los campos.");
+                return false; // Detener el envío del formulario
+            }
+
+            return true; // Continuar con el envío del formulario
+        }
+    </script>
 </head>
 
 <!--        MENU SUPERIOR        -->
@@ -21,6 +38,7 @@
     </a>
     <img class="IconoMenu" src="recursos/Iconos/Home Page.png">
 </h1>
+
 
 
 
@@ -55,7 +73,8 @@
     <br>
     <br>
 
-    <form method="post" action="RegisterUser.php">
+    <form method="post" action="RegisterUser.php" onsubmit="return validarRegistroUsuario();">
+
         
         <label>Documento de Identidad</label>
         <select class="selDocumento" id="selDocumento" name="selDocumento">
@@ -82,6 +101,8 @@
         <p class="mensaje">Una vez envíe sus datos sera redirigido a la pantallade sus Menús para poder gestionar nuevos menús</p>
         <br>
         <input class="EntrarButton" type="submit" id="btnEnviar" name="btnEnviar" value="Enviar">
+        <br>
+        <a href="RegisterEmpresa.html">¿Deseas registrar tu empres?<br>¡Clic aqui!</a>
 
     </form>
     <br>

@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EstiloClienteDesktop.css">
     <title>Ubicación</title>
+    <script>
+        function validarRegistroEmpresa() {
+            // Obtener los valores de los campos de entrada
+            var rut = document.getElementById("txtRUT").value;
+            var nombreEmpresa = document.getElementById("txtNombreEmpresa").value;
+            var rubro = document.getElementById("txtRubro").value;
+            var documentoResponsable = document.getElementById("selDocumento").value;
+            var documentoValor = document.getElementById("txtDocumento").value;
+            var nombreResponsable = document.getElementById("txtNombre").value;
+            var apellidoResponsable = document.getElementById("txtApellido").value;
+            var emailResponsable = document.getElementById("txtMail").value;
+
+            // Verificar si algún campo está vacío
+            if (
+                rut === "" ||
+                nombreEmpresa === "" ||
+                rubro === "" ||
+                documentoResponsable === "" ||
+                documentoValor === "" ||
+                nombreResponsable === "" ||
+                apellidoResponsable === "" ||
+                emailResponsable === ""
+            ) {
+                alert("Todos los campos son obligatorios. Por favor, complete todos los campos.");
+                return false; // Detener el envío del formulario
+            }
+
+            return true; // Continuar con el envío del formulario
+        }
+    </script>
 </head>
 
 
@@ -15,7 +45,7 @@
         <img class="IconoMenu" src="recursos/Iconos/Map Marker.png">
     </a>
     <a href="main.html">
-        <img class="IconoLogo" src="recursos/Iconos/image 1.png">
+        <img class="IconoLogo" src="recursos/Iconos/sugar code icon.png">
     </a>
     <a href="login.html">
         <img class="IconoMenu" src="recursos/Iconos/Name.png">
@@ -50,7 +80,8 @@
     <br>
     <br>
     
-    <form method="post" action="RegisterEmpresa.php">
+
+    <form method="post" action="RegisterEmpresa.php" onsubmit="return validarRegistroEmpresa();">
         <label>R.U.T.:</label>
         <br>
         <input type="text" id="txtRUT" name="txtRUT" maxlength="12">
@@ -95,6 +126,8 @@
         <br>
         <input class="EntrarButton" type="submit" id="btnEnviar" name="btnEnviar" value="Enviar" >
         <br>
+
+        <a href="RegisterEmpresa.html">¿Deseas registrar tu empres?<br>¡Clic aqui!</a>
     </form>
     <br>
     <label>Su registro y solicitud de Menús estan sujetos a aprobación de la empresa</label>
